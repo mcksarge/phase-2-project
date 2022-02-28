@@ -1,0 +1,114 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Jade Plant",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2020/11/homemade-pinched-crassula-400x300.jpg",
+      "water": "Water when top of soil is dry to touch.",
+      "light": "Requires full sunlight to grow.",
+      "temp": "65-75 degrees F (18-24 C)",
+      "soil": "Well-draining potting mix.",
+      "likes": 4
+    },
+    {
+      "id": 2,
+      "name": "Aloe Vera",
+      "image": "https://www.almanac.com/sites/default/files/styles/max_1300x1300/public/image_nodes/aloe-vera-white-pot_sunwand24-ss_edit.jpg?itok=CfEl7W7n",
+      "water": "Allow top third of soil to dry out between waterings.",
+      "light": "Bright, indirect sunlight, or artificial light.",
+      "temp": "55-80 degrees F",
+      "soil": "Sandy.",
+      "likes": 19
+    },
+    {
+      "id": 3,
+      "name": "Lady Palm",
+      "image": "https://www.thespruce.com/thmb/QBzBtPjI-juMm6_nOLHpQrUN7JE=/3450x2300/filters:no_upscale():max_bytes(150000):strip_icc()/KaraRileyLadyPalm-7-23afa0df7d144fc7bfa0a90345aa12fa.jpg",
+      "water": "When top 2 inches of soil feels dry.",
+      "light": "Partial light, shade.",
+      "temp": "60-80 degrees F",
+      "soil": "Loamy, well-draining.",
+      "likes": 10
+    },
+    {
+      "id": 4,
+      "name": "String of Pearls",
+      "image": "https://cdn.shopify.com/s/files/1/0068/4215/5090/products/sept18-014_8c493ada-191e-4b24-9fdb-122373918975_480x.jpg?v=1611785849",
+      "water": "If top 1/2 inch of soil is dry, it most likely needs water.",
+      "light": "Combination of direct, indirect sunlight.",
+      "temp": "50-60 degrees F",
+      "soil": "Sandy, well draining.",
+      "likes": 4
+    },
+    {
+      "id": 5,
+      "name": "Pothos",
+      "image": "https://m.media-amazon.com/images/I/81m0IBljM-L._AC_SX425_.jpg",
+      "water": "Every 1-2 weeks, allow soil to dry between waterings.",
+      "light": "Bright, indirect light.",
+      "temp": "65-85 degrees F",
+      "soil": "Well-draining potting mix.",
+      "likes": 9
+    },
+    {
+      "id": 6,
+      "name": "Asparagus Fern",
+      "image": "https://www.provenwinners.com/sites/provenwinners.com/files/imagecache/500x500/ifa_upload/asparagus_fern_mono.jpg",
+      "water": "Keep soil moist, mist plant daily",
+      "light": "Bright, indirect light.",
+      "temp": "55-70 degrees F",
+      "soil": "Well-draining potting mix.",
+      "likes": 12
+    },
+    {
+      "id": 7,
+      "name": "Chinese Money Plant",
+      "image": "https://thelittlebotanical.com/wp-content/uploads/2021/01/Pilea3.jpg",
+      "water": "Allow soil to nearly dry out between waterings.",
+      "light": "Bright, indirect light.",
+      "temp": "Avoid below 50 degrees F",
+      "soil": "Well-draining, rich.",
+      "likes": 5
+    },
+    {
+      "id": 8,
+      "name": "Yucca",
+      "image": "https://www.thespruce.com/thmb/DGHuQVaTTClNSLawOrCeoXZm4Qs=/2000x2000/smart/filters:no_upscale()/grow-yucca-inside-1902500-02-94f8cb21084545c699097dac69efddd1.jpg",
+      "water": "Allow soil to dry out between waterings.",
+      "light": "Bright, indirect light.",
+      "temp": "30-90 degrees F",
+      "soil": "Sandy, well-draining.",
+      "likes": 6
+    },
+    {
+      "id": 9,
+      "name": "Spider Plant",
+      "image": "https://m.media-amazon.com/images/I/61PPYUoc2aL._AC_SX425_.jpg",
+      "water": "Keep soil lightly moist.",
+      "light": "Partial, shade",
+      "temp": "Keep above 50 degrees F",
+      "soil": "Loamy, well-draining.",
+      "likes": 6
+    },
+    {
+      "id": 10,
+      "name": "English Ivy",
+      "image": "https://www.mydomaine.com/thmb/nJIKUzSxmU13_oDrQL-umsjI0Qc=/1414x1414/smart/filters:no_upscale()/EnglishIvyvictoriabee-70d7442bcc1d4b5e872628b067525159.jpeg",
+      "water": "Let top of soil dry out between waterings.",
+      "light": "Partial to full shade",
+      "temp": "45-80 degrees F",
+      "soil": "Fertile, moist",
+      "likes": 14
+    }
+  ],
+  "comments": [{
+    "Ally": "Thank you for the guide!"
+  },
+  {
+    "Joseph": "2nd comment wooooo!!!"
+  },
+  {
+    "Anonymous": "I like turtles"
+  }
+  ]
+}
