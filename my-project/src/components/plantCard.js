@@ -1,18 +1,19 @@
 import React from "react";
 
-function PlantCard({plant}) {
-    console.log(plant)
+function PlantCard(props) {
+    const {name, water, soil, image, light, temp, likes} = props
 
 
     return (
         <div>
-            <h4>{plant.name}</h4>
+            <h4>{name}</h4>
+            <img src={image} className="plant-img"></img>
             <ul>
-                <li>{plant.light}</li>
-                <li>{plant.soil}</li>
-                <li>{plant.water}</li>
-                <li>{plant.temp}</li>
-                <li>{plant.likes}</li>
+                <li>{water}</li>
+                <li>{light}</li>
+                <li>{soil}</li>
+                <li>{temp}</li>
+                <li>{likes}</li>
             </ul>
         </div>
     )
