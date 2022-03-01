@@ -1,6 +1,6 @@
 import React from "react";
 
-function Links(){
+function Links() {
     return(
         <div id="link-container">
             <p>Home</p>

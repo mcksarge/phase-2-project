@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: large;
 }
 
 code {
@@ -19,7 +20,9 @@ code {
   border: solid yellow;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: brown;
+  background-color: #948265;
+  padding: 0px 5px;
+  font-size: 60px;
 }
 
 header {
@@ -32,4 +35,8 @@ header {
 #link-container {
   display: flex;
   justify-content: center;
+}
+
+#p-title {
+  font-size: 20px;
 }
