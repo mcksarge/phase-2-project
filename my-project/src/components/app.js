@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Links from "./links";
 import Home from "./home";
+import PlantsList from "./plantsList";
 
 function App() {
   const [plants, setPlants] = useState([])
@@ -32,6 +33,7 @@ function App() {
       <Header />
       <Links />
       <Home />
+      <PlantsList plants={plants} />
     </div>
   );
 }
