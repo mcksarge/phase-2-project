@@ -1,5 +1,7 @@
 import React from "react";
 import PlantCard from "./plantCard";
+import PlantForm from "./plantForm";
+import { Route, NavLink } from "react-router-dom";
 
 function Plants({plants}) {
 
@@ -22,8 +24,16 @@ function Plants({plants}) {
 
 
     return (
-        <div className="plant-container">
-            {allPlants}
+        <div>
+            <div className="new-plant-link">
+                <NavLink to="/plants/newplant" exact>Add New Plant</NavLink>
+            </div>
+            <Route path="/plants/newplant">
+                <PlantForm />
+            </Route>
+            <div className="plant-container">
+                {allPlants}
+            </div>
         </div>
     )
 }
