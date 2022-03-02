@@ -13,8 +13,8 @@ function PlantCard(props) {
                 <li><strong>Sunlight:</strong> {light}</li>
                 <li><strong>Soil:</strong> {soil}</li>
                 <li><strong>Temp:</strong> {temp}</li>
-                <li>{likes} likes</li>
             </ul>
+            <button>{likes}</button>
         </div>
     )
 }
