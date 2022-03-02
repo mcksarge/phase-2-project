@@ -56,7 +56,14 @@ header {
   padding: 5px 10px;
   text-align: center;
   width: 400px;
-  
+}
+
+.plant-card:hover {
+  background-color: green;
+}
+
+.plant-card:active {
+  background-color: greenyellow;
 }
 
 .plant-container {
