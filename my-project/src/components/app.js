@@ -3,6 +3,8 @@ import Header from "./header";
 import Links from "./links";
 import Home from "./home";
 import PlantsList from "./plantsList";
+import Comments from "./comments";
+import { Route } from "react-router-dom";
 
 function App() {
   const [plants, setPlants] = useState([])
@@ -16,6 +18,7 @@ function App() {
       setPlants(data)
     })
   }, [])
+
 
   //Fetch comment data
   useEffect(() => {
@@ -32,8 +35,15 @@ function App() {
     <div className="App">
       <Header />
       <Links />
-      <Home />
-      <PlantsList plants={plants} />
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/plants">
+       <PlantsList plants={plants} />
+      </Route>
+      <Route path="/comments">
+       <Comments comments={comments} />
+      </Route>
     </div>
   );
 }

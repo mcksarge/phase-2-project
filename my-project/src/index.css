@@ -34,7 +34,8 @@ header {
 
 #link-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 #p-title {
@@ -59,11 +60,11 @@ header {
 }
 
 .plant-card:hover {
-  background-color: green;
+  background-color: greenyellow;
 }
 
 .plant-card:active {
-  background-color: greenyellow;
+  background-color: green;
 }
 
 .plant-container {
