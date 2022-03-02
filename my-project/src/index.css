@@ -45,3 +45,23 @@ header {
   width: 200px;
   height: 200px;
 }
+
+.plant-list {
+  list-style-type: none;
+}
+
+.plant-card {
+  margin-bottom: 50px;
+  border: solid green;
+  padding: 5px 10px;
+  text-align: center;
+  width: 400px;
+  
+}
+
+.plant-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

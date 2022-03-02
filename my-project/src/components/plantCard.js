@@ -5,15 +5,15 @@ function PlantCard(props) {
 
 
     return (
-        <div>
-            <h4>{name}</h4>
+        <div className="plant-card">
             <img src={image} className="plant-img"></img>
-            <ul>
-                <li>{water}</li>
-                <li>{light}</li>
-                <li>{soil}</li>
-                <li>{temp}</li>
-                <li>{likes}</li>
+            <h4>{name}</h4>
+            <ul className="plant-list">
+                <li><strong>Watering:</strong> {water}</li>
+                <li><strong>Sunlight:</strong> {light}</li>
+                <li><strong>Soil:</strong> {soil}</li>
+                <li><strong>Temp:</strong> {temp}</li>
+                <li>{likes} likes</li>
             </ul>
         </div>
     )
