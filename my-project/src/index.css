@@ -59,17 +59,71 @@ header {
   width: 400px;
 }
 
-.plant-card:hover {
-  background-color: greenyellow;
-}
-
-.plant-card:active {
-  background-color: green;
-}
-
 .plant-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.new-plant-link {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#new-plant-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+#new-plant-title {
+  text-align: center;
+  margin: auto;
+}
+
+#new-plant-container {
+  margin-bottom: 30px;
+}
+
+#comment-container li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+#comment-title {
+  background-color: yellowgreen;
+}
+
+#new-plant-button {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.comment {
+  border-bottom: solid 1px;
+}
+
+#comment-input {
+  width: 600px;
+  margin: auto;
+}
+
+#new-comment-form {
+  margin: auto;
+  text-align: center;
+}
+
+#new-comment-title {
+  margin: auto;
+  text-align: center;
+}
+
+#new-comment-container {
+  border: solid 2px;
+  padding-bottom: 10px;
+  background-color: skyblue;
 }
