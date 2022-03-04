@@ -14,7 +14,7 @@ function PlantCard(props) {
                 <li><strong>Soil:</strong> {soil}</li>
                 <li><strong>Temp:</strong> {temp}</li>
             </ul>
-            <button>{likes}</button>
+            <button>{likes}❤️</button>
         </div>
     )
 }
