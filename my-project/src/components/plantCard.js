@@ -1,7 +1,7 @@
 import React from "react";
 
 function PlantCard(props) {
-    const {name, water, soil, image, light, temp, likes, id, onLike, handleDelete} = props
+    const {name, water, soil, image, light, temp, likes, id, onLike, onDelete} = props
 
     function handleLike() {
         let liked = likes + 1
@@ -18,9 +18,16 @@ function PlantCard(props) {
         .then(res => res.json())
         .then(data => onLike(data))
 
-
     }
 
+    function handleDelete () {
+
+        fetch(`http://localhost:3000/plants/${id}`, {
+            method: "DELETE",
+        })
+        .then(res => res.json())
+        .then(() => onDelete(id))
+    }
 
 
     return (

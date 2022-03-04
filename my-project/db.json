@@ -99,16 +99,6 @@
       "temp": "45-80 degrees F",
       "soil": "Fertile, moist",
       "likes": 15
-    },
-    {
-      "name": "Monstera",
-      "image": "https://cb.scene7.com/is/image/Crate/PottedMonstera24inSHS20/$web_pdp_main_carousel_low$/191217102319/faux-potted-monstera.jpg",
-      "water": "When soil is dry",
-      "light": "needs sun",
-      "temp": "humid",
-      "soil": "give it soil",
-      "likes": 4,
-      "id": 11
     }
   ],
   "comments": [

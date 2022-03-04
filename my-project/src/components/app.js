@@ -52,11 +52,18 @@ function App() {
     setRefPlants(true)
   }
 
-  function onDelete(deletedComment) {
+  function onDeleteComment(deletedComment) {
     console.log(deletedComment)
     const updatedComments = comments.filter((comment) => comment.id !== deletedComment)
     setComments(updatedComments)
     setRefComments(true)
+  }
+
+  function onDeletePlant(deletedPlant) {
+    console.log(deletedPlant)
+    const updatedPlants = plants.filter((plant) => plant.id !== deletedPlant)
+    setPlants(updatedPlants)
+    setRefPlants(true)
   }
 
   function onLike(liked) {
@@ -72,10 +79,10 @@ function App() {
         <Home />
       </Route>
       <Route path="/plants">
-       <PlantsList plants={plants} onLike={onLike} handleNewPlant={handleNewPlant} />
+       <PlantsList plants={plants} onLike={onLike} handleNewPlant={handleNewPlant} onDelete={onDeletePlant} />
       </Route>
       <Route path="/comments">
-       <Comments comments={comments} handleNewComment={handleNewComment} onDelete={onDelete} />
+       <Comments comments={comments} handleNewComment={handleNewComment} onDelete={onDeleteComment} />
       </Route>
     </div>
   );

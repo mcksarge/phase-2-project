@@ -3,7 +3,7 @@ import PlantCard from "./plantCard";
 import PlantForm from "./plantForm";
 import { Route, NavLink } from "react-router-dom";
 
-function Plants({plants, onLike, handleNewPlant}) {
+function Plants({plants, onLike, handleNewPlant, onDelete}) {
 
  
     let allPlants = plants.map((plant, i) => {
@@ -19,10 +19,13 @@ function Plants({plants, onLike, handleNewPlant}) {
                 likes={plant.likes}
                 id={plant.id}
                 onLike={onLike}
+                onDelete={onDelete}
             />
         )
 
     })
+
+
 
 
     return (
