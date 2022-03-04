@@ -10,13 +10,7 @@ function PlantForm({handleNewPlant}) {
         soil: "",
         likes: 0
     })
-    // const [name, setName] = useState({name: ""})
-    // const [water, setWater] = useState({water: ""})
-    // const [light, setLight] = useState({light: ""})
-    // const [temp, setTemp] = useState({temp: ""})
-    // const [soil, setSoil] = useState({soil: ""})
-    // const [image, setImage] = useState({image: ""})
-    // const [likes, setLikes] = useState({likes: 0})
+
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -37,6 +31,16 @@ function PlantForm({handleNewPlant}) {
         })
         .then(res => res.json())
         .then(() => handleNewPlant(formData))
+
+        setFormData({
+            name: "",
+            image: "",
+            water: "",
+            light: "",
+            temp: "",
+            soil: "",
+            likes: 0
+        })
     }
 
     function handleChange(e) {
@@ -63,12 +67,12 @@ function PlantForm({handleNewPlant}) {
         <div id="new-plant-container">
             <h2 id="new-plant-title">Add a new plant</h2>
             <form id="new-plant-form" onSubmit={handleSubmit}>
-                <input type="text" placeholder="plant name" name="name" onChange={handleChange}></input>
-                <input type="text" placeholder="water" name="water" onChange={handleChange}></input>
-                <input type="text" placeholder="sunlight" name="light" onChange={handleChange}></input>
-                <input type="text" placeholder="soil" name="soil" onChange={handleChange}></input>
-                <input type="text" placeholder="temp" name="temp" onChange={handleChange}></input>
-                <input type="text" placeholder="image" name="image" onChange={handleChange}></input>
+                <input type="text" placeholder="plant name" name="name" onChange={handleChange} value={formData.name}></input>
+                <input type="text" placeholder="water" name="water" onChange={handleChange} value={formData.water}></input>
+                <input type="text" placeholder="sunlight" name="light" onChange={handleChange} value={formData.light}></input>
+                <input type="text" placeholder="soil" name="soil" onChange={handleChange} value={formData.soil}></input>
+                <input type="text" placeholder="temp" name="temp" onChange={handleChange} value={formData.temp}></input>
+                <input type="text" placeholder="image" name="image" onChange={handleChange} value={formData.image}></input>
                 <button type="submit" id="new-plant-button" onChange={handleChange}>Submit</button>
             </form>
         </div>
