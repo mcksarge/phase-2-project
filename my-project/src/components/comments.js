@@ -41,6 +41,9 @@ function Comments({ comments, handleNewComment, onDelete }) {
         .then(res => res.json())
         .then(() => handleNewComment(formData))
         
+        setFormData({
+            comment: ""
+        })
     }
 
 
@@ -51,7 +54,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
             <div id="new-comment-container">
                 <h3 id="new-comment-title">Enter A New Comment</h3>
                 <form id="new-comment-form" onSubmit={handleSubmit}>
-                    <input id="comment-input" type="text" name="comment" placeholder="Enter Comment..." onChange={handleChange}></input>
+                    <input id="comment-input" type="text" name="comment" placeholder="Enter Comment..." onChange={handleChange} value={formData.comment}></input>
                     <button type="submit">Submit</button>
                 </form>
             </div>
