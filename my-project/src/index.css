@@ -108,8 +108,9 @@ header {
 }
 
 #comment-input {
-  width: 600px;
+  width: 55%;
   margin: auto;
+  overflow: hidden;
 }
 
 #new-comment-form {
@@ -126,4 +127,9 @@ header {
   border: solid 2px;
   padding-bottom: 10px;
   background-color: skyblue;
+}
+
+.delete-comment {
+  display: flex;
+  justify-content: right;
 }

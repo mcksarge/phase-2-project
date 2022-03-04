@@ -101,17 +101,18 @@
       "likes": 14
     }
   ],
-  "comments": [{
-    "comment": "Thank you for the guide!",
-    "name": "Ally"
-  },
-  {
-    "comment": "2nd comment wooooo!!!",
-    "name": "Joseph"
-  },
-  {
-    "comment": "I like turtles",
-    "name": "Anonymous"
-  }
+  "comments": [
+    {
+      "comment": "Thank you for the guide!",
+      "id": 1
+    },
+    {
+      "comment": "2nd comment wooooo!!!",
+      "id": 2
+    },
+    {
+      "comment": "I like turtles",
+      "id": 3
+    }
   ]
 }
