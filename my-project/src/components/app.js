@@ -9,7 +9,8 @@ import { Route } from "react-router-dom";
 function App() {
   const [plants, setPlants] = useState([])
   const [comments, setComments] = useState([])
-  const [ref, setRef] = useState(true)
+  const [refComments, setRefComments] = useState(true)
+  const [refPlants, setRefPlants] = useState(true)
 
 
   //Fetch plant data
@@ -17,35 +18,38 @@ function App() {
     fetch('http://localhost:3000/plants')
     .then(res => res.json())
     .then(data => {
-      if (ref)
-      setPlants(data)
-      setRef(false)
+      if (refPlants === true) {
+        setPlants(data)
+        setRefPlants(false)
+        console.log("Rendered Plants")
+      }
+
     })
-  }, [plants])
+  }, [refPlants])
 
   //Fetch comment data
   useEffect(() => {
     fetch('http://localhost:3000/comments')
     .then(res => res.json())
     .then(data => {
-      if ( ref === true && path="/comments"){
+      if (refComments === true){
         setComments(data)
-        setRef(false)
+        setRefComments(false)
         console.log("Rendered Comments")
       }
     })
-  }, [ref])
+  }, [refComments])
 
   function handleNewComment(newComment) {
     setComments([...comments, newComment])
-    setRef(true)
+    setRefComments(true)
   }
 
   function onDelete(deletedComment) {
     console.log(deletedComment)
     const updatedComments = comments.filter((comment) => comment.id !== deletedComment)
     setComments(updatedComments)
-    setRef(true)
+    setRefComments(true)
   }
 
   return (
