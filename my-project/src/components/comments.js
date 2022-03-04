@@ -7,6 +7,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
     })
 
 
+
     const renderComments = comments.map((comment, i) => {
 
         return (

@@ -41,8 +41,15 @@ function App() {
   }, [refComments])
 
   function handleNewComment(newComment) {
+    console.log(newComment)
     setComments([...comments, newComment])
     setRefComments(true)
+  }
+
+  function handleNewPlant(newPlant) {
+    console.log(newPlant)
+    setPlants([...plants, newPlant])
+    setRefPlants(true)
   }
 
   function onDelete(deletedComment) {
@@ -50,6 +57,11 @@ function App() {
     const updatedComments = comments.filter((comment) => comment.id !== deletedComment)
     setComments(updatedComments)
     setRefComments(true)
+  }
+
+  function onLike(liked) {
+    console.log(liked)
+    setRefPlants(true)
   }
 
   return (
@@ -60,7 +72,7 @@ function App() {
         <Home />
       </Route>
       <Route path="/plants">
-       <PlantsList plants={plants} />
+       <PlantsList plants={plants} onLike={onLike} handleNewPlant={handleNewPlant} />
       </Route>
       <Route path="/comments">
        <Comments comments={comments} handleNewComment={handleNewComment} onDelete={onDelete} />

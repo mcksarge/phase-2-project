@@ -8,7 +8,7 @@
       "light": "Requires full sunlight to grow.",
       "temp": "65-75 degrees F (18-24 C)",
       "soil": "Well-draining potting mix.",
-      "likes": 4
+      "likes": 14
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "light": "Bright, indirect sunlight, or artificial light.",
       "temp": "55-80 degrees F",
       "soil": "Sandy.",
-      "likes": 19
+      "likes": 20
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "light": "Partial light, shade.",
       "temp": "60-80 degrees F",
       "soil": "Loamy, well-draining.",
-      "likes": 10
+      "likes": 12
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "light": "Combination of direct, indirect sunlight.",
       "temp": "50-60 degrees F",
       "soil": "Sandy, well draining.",
-      "likes": 4
+      "likes": 7
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "light": "Bright, indirect light.",
       "temp": "65-85 degrees F",
       "soil": "Well-draining potting mix.",
-      "likes": 9
+      "likes": 13
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "light": "Bright, indirect light.",
       "temp": "55-70 degrees F",
       "soil": "Well-draining potting mix.",
-      "likes": 12
+      "likes": 13
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "light": "Bright, indirect light.",
       "temp": "Avoid below 50 degrees F",
       "soil": "Well-draining, rich.",
-      "likes": 5
+      "likes": 11
     },
     {
       "id": 8,
@@ -98,7 +98,17 @@
       "light": "Partial to full shade",
       "temp": "45-80 degrees F",
       "soil": "Fertile, moist",
-      "likes": 14
+      "likes": 15
+    },
+    {
+      "name": "Monstera",
+      "image": "https://cb.scene7.com/is/image/Crate/PottedMonstera24inSHS20/$web_pdp_main_carousel_low$/191217102319/faux-potted-monstera.jpg",
+      "water": "When soil is dry",
+      "light": "needs sun",
+      "temp": "humid",
+      "soil": "give it soil",
+      "likes": 4,
+      "id": 11
     }
   ],
   "comments": [
@@ -121,6 +131,10 @@
     {
       "comment": "I love plants 4 life!",
       "id": 6
+    },
+    {
+      "comment": "I want a monstera now!",
+      "id": 7
     }
   ]
 }

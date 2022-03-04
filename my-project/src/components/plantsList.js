@@ -3,7 +3,7 @@ import PlantCard from "./plantCard";
 import PlantForm from "./plantForm";
 import { Route, NavLink } from "react-router-dom";
 
-function Plants({plants}) {
+function Plants({plants, onLike, handleNewPlant}) {
 
  
     let allPlants = plants.map((plant, i) => {
@@ -17,6 +17,8 @@ function Plants({plants}) {
                 temp={plant.temp}
                 soil={plant.soil}
                 likes={plant.likes}
+                id={plant.id}
+                onLike={onLike}
             />
         )
 
@@ -29,7 +31,7 @@ function Plants({plants}) {
                 <NavLink to="/plants/newplant" exact>Add New Plant</NavLink>
             </div>
             <Route path="/plants/newplant">
-                <PlantForm />
+                <PlantForm handleNewPlant={handleNewPlant} />
             </Route>
             <div className="plant-container">
                 {allPlants}

@@ -1,11 +1,31 @@
 import React from "react";
 
 function PlantCard(props) {
-    const {name, water, soil, image, light, temp, likes} = props
+    const {name, water, soil, image, light, temp, likes, id, onLike, handleDelete} = props
+
+    function handleLike() {
+        let liked = likes + 1
+
+
+        
+        fetch(`http://localhost:3000/plants/${id}`, {
+            method: "PATCH",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                "likes": liked
+            })
+        })
+        .then(res => res.json())
+        .then(data => onLike(data))
+
+
+    }
+
 
 
     return (
         <div className="plant-card">
+            <button onClick={handleDelete}>X</button>
             <img src={image} className="plant-img"></img>
             <h4>{name}</h4>
             <ul className="plant-list">
@@ -14,7 +34,7 @@ function PlantCard(props) {
                 <li><strong>Soil:</strong> {soil}</li>
                 <li><strong>Temp:</strong> {temp}</li>
             </ul>
-            <button>{likes}❤️</button>
+            <button onClick={handleLike}>{likes}❤️</button>
         </div>
     )
 }
