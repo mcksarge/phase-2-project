@@ -133,3 +133,7 @@ header {
   display: flex;
   justify-content: right;
 }
+
+.plant-delete {
+  display: flex;
+}

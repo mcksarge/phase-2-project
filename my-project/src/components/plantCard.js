@@ -25,7 +25,7 @@ function PlantCard(props) {
 
     return (
         <div className="plant-card">
-            <button onClick={handleDelete}>X</button>
+            <button className="plant-delete" onClick={handleDelete}>X</button>
             <img src={image} className="plant-img"></img>
             <h4>{name}</h4>
             <ul className="plant-list">
