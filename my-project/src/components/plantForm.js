@@ -74,12 +74,12 @@ function PlantForm({handleNewPlant}) {
         <div id="new-plant-container">
             <h2 id="new-plant-title">Add a new plant</h2>
             <form id="new-plant-form" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Enter plant name" name="name" onChange={handleChange} value={formData.name}></input>
-                <input type="text" placeholder="Enter water requirements" name="water" onChange={handleChange} value={formData.water}></input>
-                <input type="text" placeholder="Enter sunlight needed" name="light" onChange={handleChange} value={formData.light}></input>
-                <input type="text" placeholder="Enter soil requirements" name="soil" onChange={handleChange} value={formData.soil}></input>
-                <input type="text" placeholder="Enter ideal temperature for plant" name="temp" onChange={handleChange} value={formData.temp}></input>
-                <input type="text" placeholder="Enter image link" name="image" onChange={handleChange} value={formData.image}></input>
+                <input type="text" placeholder="Enter plant name..." name="name" onChange={handleChange} value={formData.name}></input>
+                <input type="text" placeholder="Enter water requirements..." name="water" onChange={handleChange} value={formData.water}></input>
+                <input type="text" placeholder="Enter sunlight needed..." name="light" onChange={handleChange} value={formData.light}></input>
+                <input type="text" placeholder="Enter soil requirements..." name="soil" onChange={handleChange} value={formData.soil}></input>
+                <input type="text" placeholder="Enter ideal temperature for plant..." name="temp" onChange={handleChange} value={formData.temp}></input>
+                <input type="text" placeholder="Enter image link..." name="image" onChange={handleChange} value={formData.image}></input>
                 <button type="submit" id="submit-plant-button" onChange={handleChange}>Submit</button>
             </form>
         </div>
