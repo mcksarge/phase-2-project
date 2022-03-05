@@ -44,7 +44,7 @@ function PlantForm({handleNewPlant}) {
         })
     };
 
-//************************* */
+//******************************* */
 
 
 //Changes State when text entered into input field
