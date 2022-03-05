@@ -80,7 +80,7 @@ function PlantForm({handleNewPlant}) {
                 <input type="text" placeholder="soil" name="soil" onChange={handleChange} value={formData.soil}></input>
                 <input type="text" placeholder="temp" name="temp" onChange={handleChange} value={formData.temp}></input>
                 <input type="text" placeholder="image" name="image" onChange={handleChange} value={formData.image}></input>
-                <button type="submit" id="new-plant-button" onChange={handleChange}>Submit</button>
+                <button type="submit" id="submit-plant-button" onChange={handleChange}>Submit</button>
             </form>
         </div>
     )

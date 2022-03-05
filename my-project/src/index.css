@@ -15,7 +15,7 @@ code {
     monospace;
 }
 
-/*Header*/
+/**********Header************/
 
 #header-span {
   color: white;
@@ -34,15 +34,32 @@ header {
   font-size: 30px;
 }
 
+/*Links*/
+
 #link-container {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  background-color: rgb(100, 47, 14);
+  padding: 10px;
+  width: 97%;
+  margin: auto;
 }
 
-/***************************/
+.link-button {
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
 
-/*Homepage*/
+.link-button:hover {
+  color: skyblue;
+}
+
+/*End of Links*/
+
+/*************End of Header**************/
+
+/*************Homepage***************/
 
 #homepage {
   text-align: center;
@@ -63,9 +80,40 @@ header {
   list-style-type: none;
 }
 
-/************************/
+/************End of Homepage************/
 
+/********Plant Page********/
 
+.new-plant-link {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#add-plant-button {
+  font-size: large;
+  margin-top: 30px;
+}
+
+.plant-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*Plant Card*/
+
+.plant-card {
+  margin-bottom: 50px;
+  border: solid green;
+  padding: 5px 10px;
+  text-align: center;
+  width: 400px;
+}
+
+.plant-delete {
+  display: flex;
+}
 
 .plant-img {
   width: 200px;
@@ -76,24 +124,17 @@ header {
   list-style-type: none;
 }
 
-.plant-card {
-  margin-bottom: 50px;
-  border: solid green;
-  padding: 5px 10px;
-  text-align: center;
-  width: 400px;
-}
+/*End of Plant Card*/
 
-.plant-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+/*Plant Form*/
 
-.new-plant-link {
+#new-plant-container {
   margin-bottom: 30px;
+}
+
+#new-plant-title {
   text-align: center;
+  margin: auto;
 }
 
 #new-plant-form {
@@ -104,33 +145,33 @@ header {
   margin: auto;
 }
 
-#new-plant-title {
-  text-align: center;
-  margin: auto;
-}
-
-#new-plant-container {
-  margin-bottom: 30px;
-}
-
-#comment-container li {
-  list-style-type: none;
-  margin: 10px 0;
-}
-
-#comment-title {
-  background-color: yellowgreen;
-}
-
-#new-plant-button {
+#submit-plant-button {
   width: 100px;
   text-align: center;
   margin: auto;
 }
 
-.comment {
-  border-bottom: solid 1px;
+/*End of Plant Form*/
+
+
+/***********End of Plant Page**************/
+
+/*************Comments Page******************/
+
+#new-comment-container {
+  border: solid 2px;
+  padding-bottom: 10px;
+  background-color: skyblue;
+}
+
+#new-comment-title {
   margin: auto;
+  text-align: center;
+}
+
+#new-comment-form {
+  margin: auto;
+  text-align: center;
 }
 
 #comment-input {
@@ -139,20 +180,20 @@ header {
   overflow: hidden;
 }
 
-#new-comment-form {
-  margin: auto;
-  text-align: center;
+#comment-title {
+  background-color: yellowgreen;
 }
 
-#new-comment-title {
-  margin: auto;
-  text-align: center;
+#comment-container li {
+  list-style-type: none;
+  margin: 10px 0;
 }
 
-#new-comment-container {
-  border: solid 2px;
-  padding-bottom: 10px;
-  background-color: skyblue;
+/*Comments*/
+
+.comment {
+  border-bottom: solid 1px;
+  margin: auto;
 }
 
 .delete-comment {
@@ -161,31 +202,43 @@ header {
   margin-bottom: 5px;
 }
 
-.plant-delete {
-  display: flex;
-}
+/*End of Comments*/
 
-#link-container {
-  background-color: rgb(100, 47, 14);
-  padding: 10px;
-  width: 97%;
-  margin: auto;
-}
+/**********End of Comments Page************/
 
-.link-button {
-  color: white;
-  font-size: x-large;
-  text-decoration: none;
-}
 
-.link-button:hover {
-  color: skyblue;
-}
 
-#add-plant-button {
-  font-size: large;
-  margin-top: 30px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
