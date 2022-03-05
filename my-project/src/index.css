@@ -15,6 +15,8 @@ code {
     monospace;
 }
 
+/*Header*/
+
 #header-span {
   color: white;
   border: solid yellow;
@@ -32,19 +34,38 @@ header {
   font-size: 30px;
 }
 
-#homepage {
-  text-align: center;
-}
-
 #link-container {
   display: flex;
   justify-content: space-around;
   margin: 20px;
 }
 
+/***************************/
+
+/*Homepage*/
+
+#homepage {
+  text-align: center;
+}
+
+.quote-container {
+  text-align: center;
+  margin: 100px auto;
+  border: solid;
+  background-color: beige;
+}
+
 #p-title {
   font-size: 20px;
 }
+
+.list-fun-facts {
+  list-style-type: none;
+}
+
+/************************/
+
+
 
 .plant-img {
   width: 200px;
@@ -166,14 +187,5 @@ header {
   margin-top: 30px;
 }
 
-.quote-container {
-  text-align: center;
-  margin: 100px auto;
-  border: solid;
-  background-color: beige;
-}
 
-.list-fun-facts {
-  list-style-type: none;
-}
 
