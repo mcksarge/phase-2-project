@@ -37,36 +37,36 @@ function App() {
         setRefComments(false)
       }
     })
-  }, [refComments])
+  }, [refComments]);
 
   //Functions to change state
   function handleNewComment(newComment) {
     console.log(newComment)
     setComments([...comments, newComment])
     setRefComments(true)
-  }
+  };
 
   function handleNewPlant(newPlant) {
     setPlants([...plants, newPlant])
     setRefPlants(true)
-  }
+  };
 
   function onDeleteComment(deletedComment) {
     const updatedComments = comments.filter((comment) => comment.id !== deletedComment)
     setComments(updatedComments)
     setRefComments(true)
-  }
+  };
 
   function onDeletePlant(deletedPlant) {
     const updatedPlants = plants.filter((plant) => plant.id !== deletedPlant)
     setPlants(updatedPlants)
     setRefPlants(true)
-  }
+  };
 
   function onLike(liked) {
     console.log(liked)
     setRefPlants(true)
-  }
+  };
 
   //******************************************************** */
 
@@ -84,7 +84,7 @@ function App() {
        <Comments comments={comments} handleNewComment={handleNewComment} onDelete={onDeleteComment} />
       </Route>
     </div>
-  );
-}
+  )
+};
 
 export default App;

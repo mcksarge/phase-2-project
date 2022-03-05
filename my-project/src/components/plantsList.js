@@ -23,7 +23,7 @@ function Plants({plants, onLike, handleNewPlant, onDelete}) {
             />
         )
 
-    })
+    });
 
 //****************************** */
 
@@ -41,6 +41,6 @@ function Plants({plants, onLike, handleNewPlant, onDelete}) {
             </div>
         </div>
     )
-}
+};
 
 export default Plants

@@ -10,7 +10,7 @@ function PlantForm({handleNewPlant}) {
         temp: "",
         soil: "",
         likes: 0
-    })
+    });
 
     //Provies Form functionality, updates JSON with new plant
     function handleSubmit(e) {
@@ -42,7 +42,7 @@ function PlantForm({handleNewPlant}) {
             soil: "",
             likes: 0
         })
-    }
+    };
 
 //************************* */
 
@@ -66,7 +66,7 @@ function PlantForm({handleNewPlant}) {
             [soil]: e.target.value,
         })
 
-    }
+    };
 
 //*********************************** */
 
@@ -84,6 +84,6 @@ function PlantForm({handleNewPlant}) {
             </form>
         </div>
     )
-}
+};
 
 export default PlantForm

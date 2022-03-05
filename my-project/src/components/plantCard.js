@@ -19,7 +19,7 @@ function PlantCard(props) {
         .then(res => res.json())
         .then(data => onLike(data))
 
-    }
+    };
 
 //********************** */
 
@@ -32,7 +32,7 @@ function PlantCard(props) {
         })
         .then(res => res.json())
         .then(() => onDelete(id))
-    }
+    };
 
     //***************************** */
 
@@ -50,6 +50,6 @@ function PlantCard(props) {
             <button onClick={handleLike}>{likes}❤️</button>
         </div>
     )
-}
+};
 
 export default PlantCard

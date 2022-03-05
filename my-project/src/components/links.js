@@ -9,6 +9,6 @@ function Links() {
             <NavLink to="/comments" className="link-button">Comments</NavLink>
         </div>
     )
-}
+};
 
 export default Links

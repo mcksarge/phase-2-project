@@ -18,7 +18,7 @@
       "light": "Bright, indirect sunlight, or artificial light.",
       "temp": "55-80 degrees F",
       "soil": "Sandy.",
-      "likes": 21
+      "likes": 23
     },
     {
       "id": 3,
@@ -119,7 +119,7 @@
       "id": 5
     },
     {
-      "comment": "I love plants 4 life!",
+      "comment": "I finished building my page!",
       "id": 6
     }
   ]

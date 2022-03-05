@@ -5,7 +5,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
     //State variables
     const [formData, setFormData] = useState({
         comment: ""
-    })
+    });
 
 
     //Renders comments onto DOM
@@ -19,7 +19,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
                 onDelete={onDelete}
             />
         )
-    })
+    });
 
 //*************************** */
 
@@ -30,7 +30,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
             ...formData,
             [comment]: e.target.value
         })
-    }
+    };
 
 
     function handleSubmit(e) {
@@ -47,7 +47,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
         setFormData({
             comment: ""
         })
-    }
+    };
 
 //*************************** */
 
@@ -67,6 +67,6 @@ function Comments({ comments, handleNewComment, onDelete }) {
             </ul>
         </div>
     )
-}
+};
 
 export default Comments

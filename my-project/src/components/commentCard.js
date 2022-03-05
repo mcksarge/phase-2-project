@@ -9,7 +9,7 @@ function CommentCard({comment, id, onDelete}) {
         })
         .then ((res) => res.json())
         .then (() => onDelete(id))
-    }
+    };
 
     //****************** */
 
@@ -19,7 +19,7 @@ function CommentCard({comment, id, onDelete}) {
             <button className="delete-comment" onClick={handleDelete}>Delete</button>
         </li>
     )
-}
+};
 
 
 export default CommentCard
