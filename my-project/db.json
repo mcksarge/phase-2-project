@@ -8,7 +8,7 @@
       "light": "Requires full sunlight to grow.",
       "temp": "65-75 degrees F (18-24 C)",
       "soil": "Well-draining potting mix.",
-      "likes": 14
+      "likes": 16
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "light": "Bright, indirect sunlight, or artificial light.",
       "temp": "55-80 degrees F",
       "soil": "Sandy.",
-      "likes": 20
+      "likes": 21
     },
     {
       "id": 3,
@@ -38,7 +38,7 @@
       "light": "Combination of direct, indirect sunlight.",
       "temp": "50-60 degrees F",
       "soil": "Sandy, well draining.",
-      "likes": 7
+      "likes": 9
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "light": "Bright, indirect light.",
       "temp": "65-85 degrees F",
       "soil": "Well-draining potting mix.",
-      "likes": 13
+      "likes": 14
     },
     {
       "id": 6,
@@ -78,7 +78,7 @@
       "light": "Bright, indirect light.",
       "temp": "30-90 degrees F",
       "soil": "Sandy, well-draining.",
-      "likes": 6
+      "likes": 7
     },
     {
       "id": 9,
@@ -99,16 +99,6 @@
       "temp": "45-80 degrees F",
       "soil": "Fertile, moist",
       "likes": 15
-    },
-    {
-      "name": "Monstera",
-      "image": "https://cb.scene7.com/is/image/Crate/PottedMonstera24inSHS20/$web_pdp_main_carousel_low$/191217102319/faux-potted-monstera.jpg",
-      "water": "When soil is dry",
-      "light": "needs sun",
-      "temp": "humid",
-      "soil": "give it soil",
-      "likes": 0,
-      "id": 11
     }
   ],
   "comments": [
@@ -131,10 +121,6 @@
     {
       "comment": "I love plants 4 life!",
       "id": 6
-    },
-    {
-      "comment": "I want a monstera now!",
-      "id": 7
     }
   ]
 }

@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import CommentCard from "./commentCard";
 
 function Comments({ comments, handleNewComment, onDelete }) {
+    //State variables
     const [formData, setFormData] = useState({
         comment: ""
     })
 
 
-
+    //Renders comments onto DOM
     const renderComments = comments.map((comment, i) => {
 
         return (
@@ -20,7 +21,9 @@ function Comments({ comments, handleNewComment, onDelete }) {
         )
     })
 
+//*************************** */
 
+//Handles Form functionality
     function handleChange(e) {
         const comment = e.target.name
         setFormData({
@@ -46,7 +49,7 @@ function Comments({ comments, handleNewComment, onDelete }) {
         })
     }
 
-
+//*************************** */
 
 
     return(

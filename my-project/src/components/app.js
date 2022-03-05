@@ -7,6 +7,7 @@ import Comments from "./comments";
 import { Route } from "react-router-dom";
 
 function App() {
+  //State variables
   const [plants, setPlants] = useState([])
   const [comments, setComments] = useState([])
   const [refComments, setRefComments] = useState(true)
@@ -21,7 +22,6 @@ function App() {
       if (refPlants === true) {
         setPlants(data)
         setRefPlants(false)
-        console.log("Rendered Plants")
       }
 
     })
@@ -35,11 +35,11 @@ function App() {
       if (refComments === true){
         setComments(data)
         setRefComments(false)
-        console.log("Rendered Comments")
       }
     })
   }, [refComments])
 
+  //Functions to change state
   function handleNewComment(newComment) {
     console.log(newComment)
     setComments([...comments, newComment])
@@ -47,20 +47,17 @@ function App() {
   }
 
   function handleNewPlant(newPlant) {
-    console.log(newPlant)
     setPlants([...plants, newPlant])
     setRefPlants(true)
   }
 
   function onDeleteComment(deletedComment) {
-    console.log(deletedComment)
     const updatedComments = comments.filter((comment) => comment.id !== deletedComment)
     setComments(updatedComments)
     setRefComments(true)
   }
 
   function onDeletePlant(deletedPlant) {
-    console.log(deletedPlant)
     const updatedPlants = plants.filter((plant) => plant.id !== deletedPlant)
     setPlants(updatedPlants)
     setRefPlants(true)
@@ -70,6 +67,8 @@ function App() {
     console.log(liked)
     setRefPlants(true)
   }
+
+  //************************************************************ */
 
   return (
     <div className="App">

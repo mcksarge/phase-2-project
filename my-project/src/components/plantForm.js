@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function PlantForm({handleNewPlant}) {
+    //State Variables
     const [formData, setFormData] = useState({
         name: "",
         image: "",
@@ -11,7 +12,7 @@ function PlantForm({handleNewPlant}) {
         likes: 0
     })
 
-
+    //Provies Form functionality, updates JSON with new plant
     function handleSubmit(e) {
         e.preventDefault()
         console.log(formData)
@@ -32,7 +33,7 @@ function PlantForm({handleNewPlant}) {
         .then(res => res.json())
         .then(() => handleNewPlant(formData))
 
-        setFormData({
+        setFormData({ //Clears form after input
             name: "",
             image: "",
             water: "",
@@ -43,6 +44,10 @@ function PlantForm({handleNewPlant}) {
         })
     }
 
+//************************* */
+
+
+//Changes State when text entered into input field
     function handleChange(e) {
         const name = e.target.name
         const image = e.target.name
@@ -62,6 +67,8 @@ function PlantForm({handleNewPlant}) {
         })
 
     }
+
+//*********************************** */
 
     return (
         <div id="new-plant-container">

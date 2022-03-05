@@ -2,7 +2,7 @@ import React from "react";
 
 function CommentCard({comment, id, onDelete}) {
 
-
+    //Deletes comment from JSON
     function handleDelete() {
         fetch(`http://localhost:3000/comments/${id}`, {
             method: "DELETE",
@@ -10,6 +10,8 @@ function CommentCard({comment, id, onDelete}) {
         .then ((res) => res.json())
         .then (() => onDelete(id))
     }
+
+    //****************** */
 
     return (
         <li className="comment">

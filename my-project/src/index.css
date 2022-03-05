@@ -32,6 +32,10 @@ header {
   font-size: 30px;
 }
 
+#homepage {
+  text-align: center;
+}
+
 #link-container {
   display: flex;
   justify-content: space-around;
@@ -105,6 +109,7 @@ header {
 
 .comment {
   border-bottom: solid 1px;
+  margin: auto;
 }
 
 #comment-input {
@@ -132,8 +137,43 @@ header {
 .delete-comment {
   display: flex;
   justify-content: right;
+  margin-bottom: 5px;
 }
 
 .plant-delete {
   display: flex;
 }
+
+#link-container {
+  background-color: rgb(100, 47, 14);
+  padding: 10px;
+  width: 97%;
+  margin: auto;
+}
+
+.link-button {
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  color: skyblue;
+}
+
+#add-plant-button {
+  font-size: large;
+  margin-top: 30px;
+}
+
+.quote-container {
+  text-align: center;
+  margin: 100px auto;
+  border: solid;
+  background-color: beige;
+}
+
+.list-fun-facts {
+  list-style-type: none;
+}
+

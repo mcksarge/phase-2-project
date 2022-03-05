@@ -1,13 +1,14 @@
 import React from "react";
 
 function PlantCard(props) {
+    //Deconstructed props
     const {name, water, soil, image, light, temp, likes, id, onLike, onDelete} = props
 
+
+    //Updates like count in JSON when clicked
     function handleLike() {
         let liked = likes + 1
 
-
-        
         fetch(`http://localhost:3000/plants/${id}`, {
             method: "PATCH",
             headers: {"Content-Type": "application/json"},
@@ -20,6 +21,10 @@ function PlantCard(props) {
 
     }
 
+//********************** */
+
+
+    //Deletes plant from JSON
     function handleDelete () {
 
         fetch(`http://localhost:3000/plants/${id}`, {
@@ -29,11 +34,12 @@ function PlantCard(props) {
         .then(() => onDelete(id))
     }
 
+    //***************************** */
 
     return (
         <div className="plant-card">
             <button className="plant-delete" onClick={handleDelete}>X</button>
-            <img src={image} className="plant-img"></img>
+            <img src={image} className="plant-img" alt="Listed Plant"></img>
             <h4>{name}</h4>
             <ul className="plant-list">
                 <li><strong>Watering:</strong> {water}</li>

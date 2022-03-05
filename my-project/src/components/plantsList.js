@@ -5,7 +5,7 @@ import { Route, NavLink } from "react-router-dom";
 
 function Plants({plants, onLike, handleNewPlant, onDelete}) {
 
- 
+    //Iterates through JSON to send plant data to PlantCard
     let allPlants = plants.map((plant, i) => {
         return(
             <PlantCard 
@@ -25,13 +25,13 @@ function Plants({plants, onLike, handleNewPlant, onDelete}) {
 
     })
 
-
+//****************************** */
 
 
     return (
         <div>
             <div className="new-plant-link">
-                <NavLink to="/plants/newplant" exact>Add New Plant</NavLink>
+                <NavLink to="/plants/newplant" exact ><button id="add-plant-button">Add New Plant</button></NavLink>
             </div>
             <Route path="/plants/newplant">
                 <PlantForm handleNewPlant={handleNewPlant} />
