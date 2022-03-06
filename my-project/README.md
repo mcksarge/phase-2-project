@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Plants 4 Life
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In Plants 4 Life, there are 3 links that can be clicked on to navigate to different areas of the page, (Home, Plants, Comments).
 
-## Available Scripts
+## HOME
 
-In the project directory, you can run:
+On the home page, you can view some basic information about plants, including a quote and some fun facts.
 
-### `npm start`
+## Plants
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+On the plants page, you can view different plants that are listed, each one contains the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-Name of plant
+-Watering requirements
+-Sunlight requirements
+-Soil preferences
+-Temperature preferred
 
-### `npm test`
+There is also the ability to like each individual plant you may favor, and you can delete any plant or add your own using the (Add New Plant) button located at the top of the page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Adding a plant
 
-### `npm run build`
+To add a new plant, you need the following:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Plant name
+-Water requirements
+-Sunlight needed
+-Soil requirements
+-Ideal temperature
+-Image of the plant
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+you can then press "Submit" to add the plant to the list.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Comments
 
-### `npm run eject`
+On the comments page, you can add, and view different comments.  You also have the ability to delete comments by clicking on "Delete" under the comment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To add a comment, click on the input field at the top of the page and type a comment, then press "Submit" once you are done.
